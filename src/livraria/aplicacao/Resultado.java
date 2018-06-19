@@ -4,20 +4,13 @@
 
 package livraria.aplicacao;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import livraria.dominio.EntidadeDominio;
 
 public class Resultado {
 
     private Collection<EntidadeDominio> entidades;
-    private Collection<String> resultados;
-
-    public Resultado(){
-        
-        resultados = new ArrayList<>();
-        
-    }
+    private String resultados;
     
     /**
      * @return the entidades
@@ -33,20 +26,12 @@ public class Resultado {
         this.entidades = entidades;
     }
 
-    /**
-     * @return the resultados
-     */
-    public Collection<String> getResultados() {
+    public String getResultados() {
         return resultados;
     }
 
-    /**
-     * @param resultados the resultados to set
-     */
-    public void setResultados(Collection<String> resultados) {
+    public void setResultados(String resultados) {
         this.resultados = resultados;
     }
-
-    
     
 }

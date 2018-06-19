@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import livraria.core.IStrategy;
-import livraria.dao.DAOLivro;
+import livraria.core.dao.DAOLivro;
 import livraria.dominio.EntidadeDominio;
 import livraria.dominio.Livro;
 

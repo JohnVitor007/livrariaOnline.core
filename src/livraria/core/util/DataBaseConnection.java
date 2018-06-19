@@ -14,7 +14,7 @@ public class DataBaseConnection {
         
         String connectionString = "jdbc:postgresql://localhost:5432/livraria";
         String user = "postgres";
-        String pass = "94769546";
+        String pass = "";
         
         String driver = "org.postgresql.Driver";
         

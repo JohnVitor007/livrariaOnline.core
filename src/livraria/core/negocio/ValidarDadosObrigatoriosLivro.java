@@ -20,6 +20,9 @@ public class ValidarDadosObrigatoriosLivro implements IStrategy{
         
         StringBuilder sb = new StringBuilder();
         
+        if(l.getCapa() != null)
+            return null;
+        
         if(l.getTitulo().equals("")){
             sb.append("Insira o título do livro<br>");   
         }
@@ -62,7 +65,7 @@ public class ValidarDadosObrigatoriosLivro implements IStrategy{
             sb.append("Insira a peso<br>");
         }
             
-        if(l.getGrupoPrecificacao().getId() == 0)
+        if(l.getItemEstoque().getGrupoPrecificacao().getId() == 0)
             sb.append("Selecione o grupo de precificação<br>");
         
         if(l.getCodigoBarras().equals(""))
@@ -82,10 +85,7 @@ public class ValidarDadosObrigatoriosLivro implements IStrategy{
         
         if(l.getEdicao().getDimensoes().getPeso().getQuantidade()== 0)
             sb.append("Insira o peso do livro<br>");
-        
-        if(l.getGrupoPrecificacao().getId() == 0)
-            sb.append("Selecione o grupo de precificação<br>");
-        
+               
         
         if(sb.length() > 0)
             return sb.toString();
